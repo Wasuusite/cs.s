@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+#eye{
+    position: absolute;
+    top: 165px;
+    left: 160px;
+    color: chocolate;
+}
+.CONTAINER{
+width: 100%;
+height: 50px;
+background-color: black;
+position: absolute;
+top: 0;
+
+}
+.CONTAINER {
+    margin: 5px;
+    padding: 10px;
+    /* align-items: center;
+    float: right;
+    display: block;
+    justify-content: space-between; */
+    color: aliceblue;
+}
+.NEW{
+float: left;
+display: flex;
+justify-content: space-between;
+}
+    </style>
+</head>
+<body>
+    <form><br><br>
+<h1>WELCOME</h1>
+<input type="text" placeholder="username"><br><br>
+<input type="password" placeholder="password" id="mine"><br><br>
+<button>Submit</button>
+<i class="fa fa-eye-slash" id="eye"></i>
+    </form>
+    <script>
+        document.getElementById("eye").addEventListener("click",function(){
+
+            var a=document.getElementById("mine");
+
+            if(a.type=="password"){
+                a.type="text";
+
+                this.classList.add("fa-eye");
+                this.classList.remove("fa-eye-slash");
+            }
+            else{
+                a.type="password"
+                this.classList.remove("fa-eye");
+                this.classList.add("fa-eye-slash");
+                }
+        })
+    </script>
+    <div class="CONTAINER">
+        <div class="NE"><a>home</a>
+        <a>about</a>
+        <a>service</a>
+        <a>contact</a>
+    </div>
+    </div>
+</body>
+</html>
