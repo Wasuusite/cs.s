@@ -1,2 +1,2 @@
 # cs.s
-css
+url https://wasuusite.github.io/cs.s/
